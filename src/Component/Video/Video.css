@@ -1,0 +1,176 @@
+
+
+.video-section{
+    width:100%;
+    padding:8px 4%;
+    background:#FCF6EE;
+    position:relative;
+    overflow:hidden;
+}
+
+.video-bg{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.08;
+    pointer-events:none;
+}
+
+.video-heading{
+    text-align:center;
+    margin-bottom:45px;
+    position:relative;
+    z-index:2;
+}
+
+.video-heading h6{
+    color:#D88B68;
+    font-size:18px;
+    font-style:italic;
+    margin-bottom:10px;
+}
+
+.video-heading h2{
+    font-size:48px;
+    color:#1F2438;
+    line-height:1.2;
+}
+
+/* Layout */
+
+.video-wrapper{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    position:relative;
+    z-index:2;
+}
+
+/* Main */
+
+.main-video{
+    position:relative;
+}
+
+.main-video img{
+    width:100%;
+    height:520px;
+    object-fit:cover;
+    border-radius:18px;
+}
+
+.video-title{
+    position:absolute;
+    top:30px;
+    left:30px;
+    color:#fff;
+}
+
+.video-title h2{
+    font-size:36px;
+    line-height:1.2;
+}
+
+.main-play{
+    position:absolute;
+    bottom:25px;
+    right:25px;
+
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+    cursor:pointer;
+}
+
+/* Right */
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.video-card{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.video-card img{
+    width:100%;
+    height:115px;
+    object-fit:cover;
+    display:block;
+}
+
+.video-card span{
+    position:absolute;
+    top:10px;
+    left:10px;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+}
+
+.play-btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+    width:38px;
+    height:38px;
+    border-radius:50%;
+
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:18px;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.video-wrapper{
+    grid-template-columns:1fr;
+}
+
+.main-video img{
+    height:350px;
+}
+
+.video-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:576px){
+
+.video-grid{
+    grid-template-columns:1fr;
+}
+
+.video-heading h2{
+    font-size:30px;
+}
+
+.main-video img{
+    height:250px;
+}
+
+}

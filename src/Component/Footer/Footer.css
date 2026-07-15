@@ -1,0 +1,228 @@
+
+
+.footer{
+    width:100%;
+    background:#FCF6EE;
+    padding:60px 5%;
+}
+
+.footer-box{
+
+    background:#171F31;
+
+    border-radius:28px;
+
+    padding:40px;
+    height: 320px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+
+    position:relative;
+}
+
+/* Left */
+
+.footer-left{
+    width:25%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:320px;
+}
+
+.footer-logo{
+    width:90px;
+}
+
+.social{
+    display:flex;
+    gap:18px;
+}
+
+.social a{
+
+    width:55px;
+    height:55px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#171F31;
+
+    text-decoration:none;
+
+    font-size:20px;
+}
+
+/* Center */
+
+.footer-center{
+
+    width:45%;
+
+    display:flex;
+    justify-content:space-between;
+}
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-col h4{
+
+    color:#8E93A5;
+
+    margin-bottom:25px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+}
+
+.footer-col a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    margin-bottom:16px;
+
+    font-size:22px;
+
+    transition:.3s;
+}
+
+.footer-col a:hover{
+
+    color:#F7A98F;
+}
+
+/* Right */
+
+.footer-right{
+
+    width:22%;
+
+    text-align:right;
+}
+
+.footer-right button{
+
+    padding:16px 30px;
+
+    background:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    margin-bottom:35px;
+}
+
+.footer-right h3{
+
+    color:#fff;
+
+    margin-bottom:12px;
+
+    font-size:22px;
+}
+
+.footer-right p{
+
+    color:#fff;
+
+    font-size:22px;
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    background:#171F31;
+
+    border-radius:0 0 28px 28px;
+
+    margin-top:-10px;
+
+    padding:25px;
+
+    text-align:center;
+}
+
+.footer-bottom p{
+
+    color:#fff;
+
+    font-size:16px;
+
+    line-height:1.6;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.footer-box{
+
+    flex-direction:column;
+
+    gap:50px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right{
+
+    width:100%;
+}
+
+.footer-center{
+
+    flex-direction:column;
+
+    gap:40px;
+}
+
+.footer-right{
+
+    text-align:left;
+}
+
+}
+
+@media(max-width:576px){
+
+.footer{
+
+    padding:40px 20px;
+}
+
+.footer-box{
+
+    padding:30px;
+}
+
+.footer-col a{
+
+    font-size:20px;
+}
+
+.footer-right button{
+
+    width:100%;
+}
+
+}

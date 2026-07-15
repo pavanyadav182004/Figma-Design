@@ -1,0 +1,162 @@
+
+
+.banner{
+    width:100%;
+    background:#FFF6EA;
+    padding:150px 6%;
+}
+
+.banner-box{
+    width:100%;
+    min-height:420px;
+    background:#F8A893;
+    border-radius:30px;
+    overflow:hidden;
+    position:relative;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:60px 70px;
+}
+
+/* Background */
+
+.banner-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:.15;
+    z-index:1;
+}
+
+/* Left Content */
+
+.banner-content{
+    width:55%;
+    position:relative;
+    z-index:2;
+}
+
+.banner-content h6{
+    color:#000000;
+    font-size:20px;
+    font-style:italic;
+    margin-bottom:18px;
+    font-family:Georgia, serif;
+}
+
+.banner-content h1{
+    font-size:52px;
+    line-height:1.2;
+    color:#1F2438;
+    /* font-family:Georgia, serif; */
+    font-weight:500;
+    margin-bottom:35px;
+}
+
+.banner-content button{
+    padding:16px 38px;
+    background:#4B2D22;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.banner-content button:hover{
+    background:#1F2438;
+}
+
+/* Right */
+
+.banner-right{
+    width:40%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    z-index:2;
+}
+
+.sun-img{
+    width:300px;
+   
+}
+
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.banner-box{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 30px;
+}
+
+.banner-content{
+    width:100%;
+}
+
+.banner-content h1{
+    font-size:40px;
+}
+
+.banner-right{
+    width:100%;
+    margin-top:40px;
+}
+
+.sun-img{
+    width:220px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:576px){
+
+.banner{
+    padding:50px 20px;
+}
+
+.banner-box{
+    padding:35px 20px;
+    border-radius:20px;
+}
+
+.banner-content h6{
+    font-size:18px;
+}
+
+.banner-content h1{
+    font-size:28px;
+}
+
+.banner-content button{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+}
+
+.sun-img{
+    width:150px;
+}
+
+}
